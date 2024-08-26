@@ -25,12 +25,12 @@ const LoginPage = () => {
 
   return (
     <>
-    <div className='loginCard form-control bg-success bg-gradient   '>
-      <h4 className='text-center m-4 text-white'>Admin Login</h4>
+    <div className=' form-control bg-success bg-gradient py-12 justify-center'>
+      <h1 className='text-center m-4 text-white'>Admin Login</h1>
       <div className='d-flex justify-content-center mb-3'>
 
       <form onSubmit={handleLogin}>
-  <div className="p-2">
+  <div className="p-2"> 
     <input
       type="text"
       className="form-control"

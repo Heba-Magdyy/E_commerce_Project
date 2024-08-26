@@ -1,9 +1,9 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Navig() {
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
+      <nav className="navbar bg-body-tertiary fixed-top">
   <div className="container-fluid">
     <a className="navbar-brand">E-commerce <span className='text-success'>Admin</span></a>
     <form className="d-flex" role="search">

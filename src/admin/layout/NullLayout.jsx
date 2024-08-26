@@ -3,11 +3,12 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar'
 import Footer from './Footer';
 
-const Layout = () => {
+const NullLayout = () => {
     return (
         <div>
             <Navbar/>
             <main>
+                
                 <Outlet /> 
             </main>
             <Footer/>
@@ -15,4 +16,4 @@ const Layout = () => {
     );
 };
 
-export default Layout;
+export default NullLayout;
