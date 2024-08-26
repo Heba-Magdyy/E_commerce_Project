@@ -19,9 +19,14 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
+              <Link className="nav-link" to="/login">
+                <i className="fas fa-home"></i> Login
+              </Link>
+              </li>
+              <li className="nav-item">
               <Link className="nav-link" to="/">
                 <i className="fas fa-home"></i> Home
               </Link>

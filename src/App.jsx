@@ -48,10 +48,10 @@ function App() {
           <Route path="products/:id" element={<ProductDetailPage />} />
           <Route path="cart" element={<Cart />} />
           <Route path="/products" element={<NewProducts/>} />
-          <Route path="/admin/add-product" element={<AddProductForm />} />
-          <Route path="/admin/edit-product/:productId" element={<EditProductForm />} />
+          <Route path="/admin/add-product" element={<Authen><AddProductForm /></Authen>} />
+          <Route path="/admin/edit-product/:productId" element={<Authen><EditProductForm /></Authen>} />
           <Route path="/updates" element={<UpdatesPage />} />
-          <Route path="/admin/delete-product/:productId" element={<DeleteProductPage />} />
+          <Route path="/admin/delete-product/:productId" element={<Authen><DeleteProductPage /></Authen>} />
         </Route>
 
         <Route path='*' element={<NotFound />} />

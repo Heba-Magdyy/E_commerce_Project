@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {productHook} from "../UseDataHook";
 
 export default function Products() {
@@ -32,7 +33,9 @@ export default function Products() {
       <td className="px-6 py-4">{e.title}</td>
       <td className="px-6 py-4 ">{e.category}</td>
       <td className="px-6 py-4">{e.price}</td>
-      <td className="px-6 py-4"><button >Edit</button></td>
+      <td className="px-6 py-4"><Link to={`/admin/edit-product/${e.id}`}>Edit</Link></td>
+      <td className="px-6 py-4"><Link to={`/admin/delete-product/${e.id}`}>delete</Link></td>
+
     </tr>
   );
 })
